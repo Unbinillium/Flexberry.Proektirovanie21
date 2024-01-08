@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proektirovanie2.Objects", "Objects/Proektirovanie2.Objects.csproj", "{949B9408-56DD-43BF-ACBA-D5448C83CAE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proektirovanie2.ODataBackend", "ODataBackend/Proektirovanie2.ODataBackend.csproj", "{2910975E-CF3B-4961-96DD-6DAAC9C7AAA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949B9408-56DD-43BF-ACBA-D5448C83CAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949B9408-56DD-43BF-ACBA-D5448C83CAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949B9408-56DD-43BF-ACBA-D5448C83CAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949B9408-56DD-43BF-ACBA-D5448C83CAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2910975E-CF3B-4961-96DD-6DAAC9C7AAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2910975E-CF3B-4961-96DD-6DAAC9C7AAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2910975E-CF3B-4961-96DD-6DAAC9C7AAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2910975E-CF3B-4961-96DD-6DAAC9C7AAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

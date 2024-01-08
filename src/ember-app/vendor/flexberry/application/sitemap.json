@@ -1,0 +1,87 @@
+﻿{
+  "applicationCaption": "Proektirovanie2",
+  "applicationTitle": "Proektirovanie2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "учет-материалов",
+      "caption": "Учет материалов",
+      "title": "Учет материалов",
+      "children": [
+        {
+          "link": "i-i-s-proektirovanie2-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proektirovanie2-контрагенты-l",
+          "menuName": null,
+          "caption": "Контрагенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proektirovanie2-номенклатура-l",
+          "menuName": null,
+          "caption": "Номенклатура",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proektirovanie2-перемещение-l",
+          "menuName": null,
+          "caption": "Перемещение",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники",
+      "caption": "Справочники",
+      "title": "Справочники",
+      "children": [
+        {
+          "link": "i-i-s-proektirovanie2-сотрудники-l",
+          "menuName": null,
+          "caption": "СотрудникиL",
+          "title": "Сотрудники",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proektirovanie2-контрагенты-l",
+          "menuName": null,
+          "caption": "КонтрагентыL",
+          "title": "Контрагенты",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proektirovanie2-номенклатура-l",
+          "menuName": null,
+          "caption": "НоменклатураL",
+          "title": "Номенклатура",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "документы",
+      "caption": "Документы",
+      "title": "Документы",
+      "children": [
+        {
+          "link": "i-i-s-proektirovanie2-перемещение-l",
+          "menuName": null,
+          "caption": "ПеремещениеL",
+          "title": "Перемещение",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

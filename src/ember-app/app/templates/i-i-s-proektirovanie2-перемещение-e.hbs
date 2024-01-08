@@ -1,0 +1,141 @@
+<h3 class="ui header">{{t "forms.i-i-s-proektirovanie2-перемещение-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.ответственный
+      class=(if (v-get validationModel "ответственный" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.ответственный-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-ответственный=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ответственный" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.контрагент
+      class=(if (v-get validationModel "контрагент" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.контрагент-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-контрагент=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контрагент" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.материалы
+      class=(if (v-get validationModel "материалы" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.материалы-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-материалы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "материалы" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.цена
+      class=(if (v-get validationModel "цена" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.цена-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-цена=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "цена" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колВо
+      class=(if (v-get validationModel "колВо" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.колВо-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-колВо=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колВо" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.сумма
+      class=(if (v-get validationModel "сумма" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie2-перемещение-e.сумма-caption")
+      data-test-i-i-s-proektirovanie2-перемещение-e-сумма=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сумма" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proektirovanie2-перемещение-e.контрагенты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.контрагенты
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="контрагенты"
+      projection="КонтрагентыL"
+      title=(t "forms.i-i-s-proektirovanie2-перемещение-e.контрагенты-caption")
+      readonly=readonly
+      componentName="контрагентыLookup"
+      class=(if (v-get validationModel "контрагенты" "isInvalid") "error")
+      data-test-i-i-s-proektirovanie2-перемещение-e-контрагенты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контрагенты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proektirovanie2-перемещение-e.сотрудники-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудники
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="сотрудники"
+      projection="СотрудникиL"
+      title=(t "forms.i-i-s-proektirovanie2-перемещение-e.сотрудники-caption")
+      readonly=readonly
+      componentName="сотрудникиLookup"
+      class=(if (v-get validationModel "сотрудники" "isInvalid") "error")
+      data-test-i-i-s-proektirovanie2-перемещение-e-сотрудники=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудники" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proektirovanie2-перемещение-e.номенклатура-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.номенклатура
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="номенклатура"
+      projection="НоменклатураL"
+      title=(t "forms.i-i-s-proektirovanie2-перемещение-e.номенклатура-caption")
+      readonly=readonly
+      componentName="номенклатураLookup"
+      class=(if (v-get validationModel "номенклатура" "isInvalid") "error")
+      data-test-i-i-s-proektirovanie2-перемещение-e-номенклатура=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номенклатура" "message")}}
+  </div>
+</form>

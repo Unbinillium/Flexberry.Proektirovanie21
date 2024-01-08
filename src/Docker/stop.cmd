@@ -1,0 +1,1 @@
+docker-compose -p proektirovanie2 down

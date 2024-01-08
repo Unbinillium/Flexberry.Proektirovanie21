@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISProektirovanie2ЗапасМатериалов",
+  "modelName": "i-i-s-proektirovanie2-запас-материалов",
+  "className": "ЗапасМатериалов",
+  "nameSpace": "IIS.Proektirovanie2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колВо",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "товар",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенклатура",
+      "relatedTo": "i-i-s-proektirovanie2-номенклатура",
+      "inverse": "запасМатериалов"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗапасМатериаловE",
+      "modelName": "i-i-s-proektirovanie2-запас-материалов",
+      "attrs": [
+        {
+          "name": "колВо",
+          "caption": "Кол во",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "товар",
+          "caption": "Товар",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
